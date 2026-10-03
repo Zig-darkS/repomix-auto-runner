@@ -1,0 +1,29 @@
+{
+  "$schema": "https://repomix.com/schemas/latest/schema.json",
+  "include": [
+    "src/**",
+    "**/*"
+  ],
+  "output": {
+    "filePath": "repomix-output.xml",
+    "style": "xml",
+    "compress": false,
+    "removeComments": false,
+    "showLineNumbers": true,
+    "copyToClipboard": true,
+    "topFilesLength": 15,
+    "instructionFilePath": "repomix-instruction.md"
+  },
+  "ignore": {
+    "useGitignore": true,
+    "useDefaultPatterns": true,
+    "customPatterns": [
+      "**/.git/**",
+      "**/node_modules/**",
+      "**/bin/**",
+      "**/obj/**"
+    ]
+  },
+  "security": { "enableSecurityCheck": true },
+  "tokenCount": { "encoding": "o200k_base" }
+}
